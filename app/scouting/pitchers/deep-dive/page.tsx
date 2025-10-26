@@ -1,10 +1,10 @@
 import dynamic from "next/dynamic";
 
-const PitcherDeepDivePage = dynamic(
-  () => import("@/webapp/src/deep-dive/pitcher/PitcherDeepDivePage"),
+const PitchersDeepDiveSearch = dynamic(
+  () => import("@/components/deep-dive/PitchersDeepDiveSearch"),
   { ssr: false }
 );
 
 export default function Page() {
-  return <PitcherDeepDivePage />;
+  return <PitchersDeepDiveSearch />;
 }
